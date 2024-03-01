@@ -38,7 +38,7 @@ For this project, function keys - `f8` and `f9` has been defined as default key 
     ```
     pip install -r requirements.txt
     ```
-    For Linux OS, you may need to install `xclip` and/or `PyQt5` to enable clipboard functionality, as required by **pyperclip**:
+    For Linux OS, you may need to also install `xclip` and/or `PyQt5` to enable clipboard functionality, as required by **pyperclip**:
         
         pip install PyQt5
         sudo apt-get install xclip
