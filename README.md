@@ -1,6 +1,6 @@
 # AI Text Corrector using OpenAI's API
 
-This AI Typing assistant is powered by OpenAI's GPT-3.5 API, and functions in similar fashion as the auto-correct feature in Gboard or Grammarly. Should be used in text editors, word processors, or any other text input fields. Text language should be English.
+This AI Typing assistant is powered by OpenAI's GPT-3.5-turbo, and functions in similar fashion as the auto-correct feature in Gboard or Grammarly. Should be used in text editors, word processors, or any other text input fields. Text language should be English.
 
 ## Functionality
 Fixes all typographical, grammatical, punctuation or spelling errors, or any irregularities that may override the intended message of the user.
@@ -30,7 +30,7 @@ For this project, function keys - `f8` and `f9` has been defined as default key 
     ```
      conda activate <Environment_Name>/
     ```
-4. In the same directory, create a `.env` file, and replace '*your-api-key*' with your OpenAI API key:
+4. In the same directory, create a `.env` file containing **'your-api-key'** assigned to an environment variable:
     ```
     OPENAI_API_KEY = 'your-api-key'
     ```
@@ -38,7 +38,7 @@ For this project, function keys - `f8` and `f9` has been defined as default key 
     ```
     pip install -r requirements.txt
     ```
-    For Linux machines, you may need to install `xclip` and/or `PyQt5` to enable clipboard functionality:
+    For Linux OS, you may need to install `xclip` and/or `PyQt5` to enable clipboard functionality, as required by **pyperclip**:
         
         pip install PyQt5
         sudo apt-get install xclip
@@ -47,7 +47,7 @@ For this project, function keys - `f8` and `f9` has been defined as default key 
     ```
     python main.py
     ```
-**PS:** Due to the differences in key bindings across platforms, this script may only run fixes on Windows and Linux machines. 
+**PS:** Due to differences in key bindings across platforms, this script may only run fixes on Windows and Linux OS. 
 For MacOS, kindly modify the key bindings in the `main.py` file, as shown below:
 
 Change `Key.ctrl` -> `Key.cmd`
@@ -57,7 +57,7 @@ Change `Key.ctrl` -> `Key.cmd`
 - Open a text editor or word processor, and start typing.
 - If errors are present, hit `f8` or `f9` to fix the text.
 - If errors are still present after the first fix, hit `f8` or `f9` repeatedly to implement more fixes.
-- To stop/end the script, close the terminal or press `ctrl+c` while in the terminal window.
+- To stop/end the script, close the terminal or hit `ctrl+c` while in the terminal window.
 
 ## Customize
 
